@@ -24,13 +24,13 @@ logging_steps: 1
 lr_scheduler_type: cosine
 max_length: 1024
 max_prompt_length: 1800
-num_train_epochs: 1
+num_train_epochs: 3
 optim: adamw_torch
 output_dir: ~/ADPA-OpenSource/data/llama3.2-1b-deita-dpomix/student_dckd
 per_device_train_batch_size: 1
 push_to_hub: false
 save_strategy: "steps"
-save_steps: 100
+save_steps: 52
 save_only_model: true
 seed: 42
 warmup_ratio: 0.1
