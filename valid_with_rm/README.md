@@ -34,7 +34,7 @@ python step1_prepare_validation.py --output_dir ./
 
 ### Step 2: Generate Responses via vLLM
 
-Load your trained checkpoint to perform inference on the validation prompts. Replace `--model_path` with the actual absolute path to your checkpoint.
+Load your trained checkpoint to perform inference on the validation prompts. Replace `--model_path` with the actual absolute path to your checkpoint. (Because vllm is updated, maybe you need to add a `head_dim` to the `config.json` in your model's dir.)
 
 ```bash
 VLLM_USE_V1=0 CUDA_VISIBLE_DEVICES=0 \
