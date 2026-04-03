@@ -230,10 +230,10 @@ if __name__ == '__main__':
 
 """
 CUDA_VISIBLE_DEVICES=0,1,2,3 \
-accelerate launch --num_processes 4 /data/spgao/verl_250713/rm_score/step3_rm_score.py \
+accelerate launch --num_processes 4 ./step3_rm_score.py \
     --data ./dpomix7k_validation_results.jsonl \
     --reward_model fsfairx \
-    --load_from /data/spgao/7b_model/sfairXC-FsfairX-LLaMA3-RM-v0.1/ \
+    --load_from /path/to/sfairXC-FsfairX-LLaMA3-RM-v0.1/ \
     --prompt_key prompt \
     --response_key response \
     --rm_score_key fsfairx_score \
